@@ -1,0 +1,59 @@
+.noData {
+  height: calc(100vh - 144px);
+  color: rgba(136, 136, 146, 1);
+  text-align: center;
+  padding-top: 20px;
+}
+
+// 适配不同显示器部分
+@media only screen and (max-width: 768px) {
+  .el-dialog.fa-auto-fullAcreen {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    margin-top: 0 !important;
+    width: 100%;
+  }
+  .el-dialog.fa-auto-fit {
+    position: fixed;
+    right: 0;
+    left: 0;
+    overflow: auto;
+    margin: 0;
+    width: 100%;
+  }
+
+  .el-radio {
+    margin-bottom: 10px;
+  }
+}
+
+/** 全局左右布局结构样式*/
+.icy--layout__slide {
+  display: flex;
+  justify-content: flex-start;
+ 
+  background-color: $background-color-f1f5f8 !important;
+  min-height: 600px;
+}
+.icy--layout__slide--right,.icy--layout__slide--left {
+  width: 300px;
+  text-align: left;
+  padding-left: 20px;
+  margin-right: 20px;
+  background-color: $color-white;
+}
+
+.icy--layout__slide--right {
+  padding-left: 0px;
+  width: 880px;
+  text-align: left;
+  padding-left: 0px;
+  margin-right: 0px;
+  background-color: $color-white;
+}
+

@@ -1,0 +1,135 @@
+/*****全局tab按钮切换****************************/
+.icy-tab__button {
+  width: 150px;
+  height: 40px;
+  margin-right: 9px;
+  margin-top: 50px;
+  background: $background-color-ecf5fd;
+  color: $color-base;
+  font-size: $font-size-base;
+  border: none;
+  text-align: 2.5;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $color-dark-blue-2650a6;
+    color: $color-white;
+  }
+}
+
+//tab框激活样式
+.icy-tab__button.active {
+  background: $color-dark-blue-2650a6;
+  color: $color-white;
+  border-color: none;
+  box-shadow: none;
+}
+
+/****************分页样式**************/
+//分页前一页
+.icy-page{
+  width: 623px;
+  margin: 0 auto;
+}
+.icy-page.el-pagination .btn-prev {
+  cursor: pointer;
+  width: 42px;
+  height: 41px;
+  margin: 0px;
+  margin-right: 8px;
+  font-size: $font-size-large;
+  color: $font-color-666666;
+  text-align: center;
+  background-color: $color-white;
+}
+
+//分页数字
+.icy-page.el-pagination .el-pager .number {
+  cursor: pointer;
+  width: 41px;
+  height: 42px;
+  margin-left: 22px;
+  margin-bottom: 50px;
+  background-color: $color-white;
+  font-size: $font-size-large;
+  color: $font-color-666666;
+  border: 1px solid $color-gray-e0e0e0;
+  border-radius: 8px;
+  display: inline-block;
+  line-height: 41px;
+
+  &:hover {
+    background-color: $color-dark-blue-2650a6;
+    //数字颜色
+    color: $color-white !important;
+  }
+}
+
+//分页数字激活
+.icy-page.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: $color-dark-blue-2650a6;
+}
+
+//分页省略号
+.icy-page.el-pagination .el-pager li {
+  height: 39px;
+  background-color: $color-white;
+  line-height: 3;
+  margin: 0px;
+  margin-left: 22px;
+}
+//分页下一页
+.icy-page.el-pagination .btn-next {
+  cursor: pointer;
+  width: 41px;
+  height: 42px;
+  font-size: $font-size-large;
+  color: $font-color-666666;
+  text-align: center;
+  background-color: $color-white;
+  margin-left: 30px;
+}
+
+/****全局表格*************************************/
+.el-button--insert {
+  color: #fff;
+  background-color: #3db4ba;
+  border-color: #3db4ba;
+}
+
+.el-table {
+  //修改表
+  font-size: $font-size-small;
+  color: $color-base;
+  border: 0;
+  margin-left: 50px;
+  pointer-events: none;
+}
+.el-table td {
+  border: 0.1px solid $font-color-f2f2f2;
+}
+
+.el-table th {
+  //修改表头
+  font-size: $font-size-base;
+  font-weight: bold;
+  color: $font-color-f2f2f2;
+  background-color: $background-color-5b9dd5;
+  border: 0.1px solid $font-color-f2f2f2;
+}
+
+.el-table__row {
+  //修改奇数行
+  background-color: $background-color-d0d7e7;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td {
+  //修改偶数行
+  background-color: $background-color-e9eef4;
+}
+
+
+
+
+
+

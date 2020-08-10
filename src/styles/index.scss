@@ -1,0 +1,144 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './public.scss';
+@import './element-ui.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Microsoft YaHei, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: $font-size-base;
+  color: $color-base;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+li,
+dl,
+dt,
+dd {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button {
+  outline: none;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: ' ';
+    clear: both;
+    height: 0;
+  }
+}
+
+//main-container全局样式
+.app-main {
+  min-height: 100%;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+// layout 样式
+.icy-layout {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/**主要内容容器样式定义*/
+.icy-content__container--out {
+  background: $color-gray-f0f0f0;
+}
+.icy-content__container {
+  width: 1200px;
+  min-height: 600px;
+  background: $color-white;
+  margin: 0 auto;
+  position: relative;
+  // bottom: 30px;
+  padding-bottom: 100px;
+}
+.icy-content__containerwithnav {
+  width: 1200px;
+  min-height: 600px;
+  background: #f0f5fa;
+  margin: 0 auto;
+  position: relative;
+  // bottom: 30px;
+  padding-bottom: 100px;
+}
+
+
+
+
